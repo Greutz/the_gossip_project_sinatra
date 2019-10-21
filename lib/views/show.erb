@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>PAGE POTIN</title>
+  </head>
+  <body>
+    <h1>Voici la page du potin n°<%=id%></h1> 
+    <% gossip.each do |goss| %>
+      <p>
+        <p>Son auteur : <%= goss.author %><br/>
+        <p>Le contenu du potin : <%= goss.content %>
+      </p>
+    <% end %>
+    <p><a href='/'>Page des potins</a></p>
+    <p><a href='/gossips/<%=id%>/edit/'>Editer le potin</a><p>
+    <p>Commentaires :</p>
+  </body>
+</html>
